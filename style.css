@@ -20,7 +20,19 @@ p {
   font-weight: light;
   color: #ffffff;
 }
+
+span {
+  width: 100%;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
 span a {
+  width: 100%;
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
@@ -97,7 +109,7 @@ a {
 }
 .content {
   width: 100%;
-  max-width: 600px;
+  max-width: 1500px;
   padding: 20px 40px;
   box-sizing: border-box;
   text-align: center;
