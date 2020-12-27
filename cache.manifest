@@ -14,12 +14,10 @@ netcat\netcat.html
 netcat\rop.js
 netcat\userland.js
 netcat\web.js
-PAYLOADS\arabic132.js
 PAYLOADS\BeefQueefMod.js
 PAYLOADS\c-code.js
-PAYLOADS\Enable_VR.js
 PAYLOADS\gdumper.js
 PAYLOADS\mugimirahen.js
-PAYLOADS\mugimirahen1.js
+PAYLOADS\mugimirahenvr.js
 PAYLOADS\ps4henvtx-702.js
 PAYLOADS\todex.js
