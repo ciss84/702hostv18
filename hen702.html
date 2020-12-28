@@ -1,12 +1,7 @@
 <html>
 <body onload="go()">
 <script>
-if(document.cookie.indexOf('kex=0') >= 0)
-    document.location.href = 'index.html';
-</script>
-<script>
 function print(){}
-
 var scriptCode = '';
 function preloadScripts(lst)
 {
@@ -18,27 +13,15 @@ function preloadScripts(lst)
         scriptCode += xhr.responseText + '\n';
     }
 }
-function done()
-{
-    if(main_ret == 0 || main_ret == 179)
-    {
-        alert("You're all set!");
-        read_ptr_at(0);
-    }
-    else
-        alert("Jailbreak failed! Reboot your PS4 and try again.");
-}
 window.midExploit = function()
 {
     preloadScripts(['kex.js', 'PAYLOADS/ps4henvtx-702.js', 'PAYLOADS/c-code.js'], go);
 }
 window.postExploit = function()
 {
-    document.cookie = 'kex=0';
     setTimeout(function() //update the screen one last time...
     {
         eval.call(window, scriptCode);
-        done();
     }, 150);
 };
 </script>
